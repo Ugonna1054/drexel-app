@@ -1,7 +1,7 @@
 <template>
-    <div class='nav mb-5'>
-      <mdb-navbar id="main-navba" dark position="top"  class="navbar">
-          <mdb-navbar-brand waves class="font-weight-bold" to ='/'>
+    <div class='mb-5'>
+      <mdb-navbar  dark position="top"  class="navbar">
+          <mdb-navbar-brand  style="text-decoration:overline!important" waves class="font-weight-bold" to ='/'>
             <span>DREXEL</span>
           </mdb-navbar-brand>
      </mdb-navbar>

@@ -10,7 +10,6 @@ export default new Vuex.Store({
   state: {
     images: {},
     imageDetails: {},
-    api_url: "https://api.pexels.com/v1/search",
     api_key: "563492ad6f917000010000010fe53b3d653144b7b8045128518a8602"
   },
   mutations: {

@@ -5,7 +5,7 @@
             <div class="text-center px-4 mt-n5 container">
                 <div class="parent">
                 <div class="div1">  <p class="font-bold main-title" style="color:gainsboro"><strong>WELCOME TO DREXEL</strong></p> </div>
-                <div class="div2">  <p class="mx-5 mb-5 text-white">Drexel allows you to search for and download a wide variety of pictures from a robust picture Library provided by Pexels! </p> 
+                <div class="div2">  <p class="mx-5 mb-5 text-white">Drexel allows you to search for and download a wide variety of pictures from a robust picture Library provided by Pexels.com! </p> 
                 </div>
                 <div class="div3">
                         <div class="arrow bounce">
