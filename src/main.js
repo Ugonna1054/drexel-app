@@ -5,7 +5,6 @@ import store from "./store";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbvue/build/css/mdb.css";
 
-
 Vue.config.productionTip = false;
 
 new Vue({

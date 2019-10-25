@@ -4,8 +4,8 @@
       <search class="mb-5" style="margin-top:-57vh"/> 
       <div class="container">
        
-        <p class="text container search-text" v-if="images">Based on your search</p>
-        <span style="color:chocolate" class="container"  v-if="images">Page {{images.page}}</span>
+        <p class="text container search-text" v-if="images.page">Based on your search</p>
+        <span style="color:chocolate" class="container"  v-if="images.page">Page {{images.page}}</span>
        
         <section class="container section">
             <div class="row">
@@ -15,10 +15,10 @@
                         </div>
                 </div>
             </div>
-            <span style="color:chocolate" class="mb-5"  v-if="images">Page {{images.page}}</span>
+            <span style="color:chocolate" class="mb-5"  v-if="images.page">Page {{images.page}}</span>
             <div class="d-flex justify-content-between mb-5 mt-sm-3 mt-n2 ">
-                <div class="btn text-white" style="background:chocolate"  v-if="images" @click="previous_page"><i class="fas fa-angle-left"></i> Previous <span v-if="loading2"> <i class="fa fa-spinner fa-spin fa-1x fa-fw"></i> </span> </div>
-                <div class="btn text-white" style="background:chocolate"  v-if="images" @click="next_page">Next <i class="fas fa-angle-right"></i>  <span v-if="loading"> <i class="fa fa-spinner ml-1 fa-spin fa-1x fa-fw"></i> </span></div>
+                <div class="btn text-white" style="background:chocolate"   v-if="images.prev_page" @click="previous_page"><i class="fas fa-angle-left"></i> Previous <span v-if="loading2"> <i class="fa fa-spinner fa-spin fa-1x fa-fw"></i> </span> </div>
+                <div class="btn text-white" style="background:chocolate"  v-if="images.next_page" @click="next_page">Next <i class="fas fa-angle-right"></i>  <span v-if="loading"> <i class="fa fa-spinner ml-1 fa-spin fa-1x fa-fw"></i> </span></div>
             </div>
         </section>
       </div>

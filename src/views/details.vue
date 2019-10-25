@@ -9,8 +9,8 @@
                         <li class="list-group-item">Photographer id: {{imageDetails.photographer_id}} </li>
                         <li class="list-group-item">Photographer: {{imageDetails.photographer}}</li>
                         <li style="cursor:pointer" class="list-group-item">Photographer url: <a :href="imageDetails.photographer_url">{{imageDetails.photographer_url}}</a></li>
-                        <li class="list-group-item">Image height: {{imageDetails.height}}</li>
-                        <li class="list-group-item">Image width: {{imageDetails.width}}</li>
+                        <li class="list-group-item">Image height: {{imageDetails.height}} px</li>
+                        <li class="list-group-item">Image width: {{imageDetails.width}} px</li>
                         <li class="list-group-item"><a :href="imageDetails.src.original" download> <span class="btn btn-info">Download <i class="fa fa-download" aria-hidden="true"></i></span></a></li>
                     </ul>
                     <div class="btn btn-dark" @click="back"> <i class="fas fa-chevron-left mr-2"></i> Back</div>

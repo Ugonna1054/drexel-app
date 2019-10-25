@@ -56,7 +56,7 @@ export default {
 
 <style scoped>
 .image{
-    background: url('../assets/image1.png') center ;
+    background: url('../assets/image.png') center ;
     background-size:cover;
     background-repeat:no-repeat;
     height:100vh;
