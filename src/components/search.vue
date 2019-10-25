@@ -2,9 +2,9 @@
   <div class="container">
        <!-- Search form -->
        <div class="input-group md-form form-sm ml-xl-n5 form-2 pl-0">
-            <input class="form-control my-0 py-1" v-model="search" type="text" placeholder="Search for high quality beautiful and free photos......" aria-label="Search">
+            <input class="form-control my-0 py-1" v-model="search" type="text" placeholder="Search for high quality beautiful photos......" aria-label="Search">
             <div class="input-group-append">
-                <span style="background:midnightblue" @click="searchPhoto" class="input-group-text" id="basic-text1"><i class="fas fa-search text-white"  style=";cursor:pointer" aria-hidden="true"></i></span>
+                <span style="background:midnightblue" @click="searchPhoto" class="input-group-text" id="basic-text1"><i class="fas fa-search text-white"  style=";cursor:pointer" aria-hidden="true"></i> <span v-if="loading"> <i class="fa fa-spinner text-white ml-1 fa-spin fa-1x fa-fw"></i> </span></span>
             </div>
        </div>
   </div>
@@ -15,15 +15,19 @@ export default {
     name:'search',
     data () {
         return {
-            search : ""
+            search : "",
+            loading:false,
         }
     },
 
     methods : {
         searchPhoto () {
+            this.loading=true
             this.$store.dispatch('getImages', {
             url : `https://api.pexels.com/v1/search/?query=${this.search}&per_page=20&page=1`
         })
+        .then(_ => this.loading=false)
+        .catch(_ => this.loading=false)
 
         this.$router.push('/results')
       }
