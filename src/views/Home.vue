@@ -2,7 +2,7 @@
   <div class="home">
     <!-- <HeaderNav/> -->
     <HomeBackground/>
-    <search/>
+    <!-- <search/> -->
    </div>
 </template>
 

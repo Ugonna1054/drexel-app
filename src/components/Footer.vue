@@ -1,18 +1,10 @@
 <template>
 <div>
- 
- <mdb-navbar  color=indig class="footer text-white font-weight-bold">
-   
-
-   <div class="ml-5">
-      Made with <span style="color:red; font-size:18px"> &#10084; </span> by Ugonna &trade;
-   </div>
-
-
-   <div class="float-right">
-      <a href="https://github.com/Ugonna1054/drexel-app" class="text-white"> See code on  Github <i class="fab fa-github"></i></a>
-   </div>
- </mdb-navbar>
+    <mdb-navbar position='bottom' class="footer text-white font-weight-bold">
+    <div class="ml-5">
+        Made with <span style="color:red; font-size:18px"> &#10084; </span> by Ugonna &trade;
+    </div>
+    </mdb-navbar>
 </div>
 </template>
 
@@ -29,7 +21,7 @@ export default {
 
 <style scoped>
 .footer{
-    background:rgba(3, 0, 182, 1);
+    background: midnightblue;
     display: flex;
     justify-content: space-around
 
